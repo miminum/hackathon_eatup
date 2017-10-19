@@ -1,2 +1,16 @@
+@import "bootstrap";
 
- @import "bootstrap";
+.devise-background {
+    background-image: url(bike.jpg);
+    background-size: 100%;
+    width: 100.9%;
+    min-height: 800px;
+    
+}
+
+.login-container {
+    width: 25%;
+    height: 400px;
+    margin: 7% 37%;
+    text-align: center;
+}
