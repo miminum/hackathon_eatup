@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'devise'
 gem 'aws-sdk', '~> 3'
+gem 'httparty'
 # Shrine Dependencies
 gem 'fastimage'
 gem 'image_processing'

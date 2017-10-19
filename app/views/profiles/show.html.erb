@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+
+<% if @profile.profile_image %>
+  <div><%= image_tag @profile.profile_image_url(:thumb) %></div>
+<% end %>
 <p>
   <strong>First name:</strong>
   <%= @profile.first_name %>
@@ -13,11 +17,6 @@
 <p>
   <strong>Blurb:</strong>
   <%= @profile.blurb %>
-</p>
-
-<p>
-  <strong>Profile image data:</strong>
-  <%= @profile.profile_image_data %>
 </p>
 
 <p>
