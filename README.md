@@ -47,15 +47,24 @@ Bringing people together with similar food interests with an application that ma
 * As a User, I would like to be notified via email on a match, in order to allow me not to constantly be on the application to see if there is a match
 
 ## Wireframes
+Opening Screens
 ![Wireframe1](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe1.png)
+Matching System
 ![Wireframe2](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe2.png)
+Profiles
 ![Wireframe3](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe3.png)
+Chat and Zomato
 ![Wireframe4](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe4.png)
+Inbox
 ![Wireframe5](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe5.png)
 
 https://www.figma.com/file/KBWd0F420IaEe6uTJF3M5M5N/Hackathon
 
 ## Entity Relationship Diagram
+
+![ERD](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/ERD.png)
+
+
 http://dbdesigner.net/designer/schema/120256
 
 ## Gems
