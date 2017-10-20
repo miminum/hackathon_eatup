@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'restaurant/index'
+  get '/restaurants', to: "restaurants#index"
 
   resources :profiles
   get '/cuisine', to: "profiles#cuisine_selector", as: 'cuisine'
@@ -12,5 +12,10 @@ Rails.application.routes.draw do
   resources :conversations do
     resources :messages
   end
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+
+def after_sign_up_path_for(resource)
+  new_profile_path
+end
+
+  

@@ -1,4 +1,4 @@
-module RestaurantHelper
+module RestaurantsHelper
 
 
 def cuisine_to_id (cuisine)

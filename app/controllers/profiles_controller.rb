@@ -3,8 +3,9 @@ class ProfilesController < ApplicationController
   before_action :authenticate_user!  
 
   def cuisine_selector
-    @current_profile = Profile.find_by(user_id: current_user.id)
     
+    @current_profile = Profile.find_by(user_id: current_user.id)
+    redirect_to new_profile_path if @current_profile.nil?
   end
 
   def cuisine_update
@@ -18,7 +19,12 @@ class ProfilesController < ApplicationController
   # GET /profiles
   # GET /profiles.json
   def index
+    @current_profile = Profile.find_by(user_id: current_user.id)
     @profiles = Profile.all
+
+    current_cuisine = @current_profile.cuisine_preference
+    redirect_to "/cuisine" if current_cuisine.nil?
+    @profiles_by_cuisine = Profile.where(cuisine_preference: current_cuisine) - [@current_profile]
   end
 
   # GET /profiles/1
@@ -42,7 +48,7 @@ class ProfilesController < ApplicationController
 
     respond_to do |format|
       if @profile.save
-        format.html { redirect_to @profile, notice: 'Profile was successfully created.' }
+        format.html { redirect_to "/cuisine", notice: 'Profile was successfully created.' }
         format.json { render :show, status: :created, location: @profile }
       else
         format.html { render :new }
@@ -56,7 +62,7 @@ class ProfilesController < ApplicationController
   def update
     respond_to do |format|
       if @profile.update(profile_params)
-        format.html { redirect_to @profile, notice: 'Profile was successfully updated.' }
+        format.html { redirect_to profiles_path, notice: 'Profile was successfully updated.' }
         format.json { render :show, status: :ok, location: @profile }
       else
         format.html { render :edit }
