@@ -4,7 +4,7 @@ class ProfilesController < ApplicationController
 
   def cuisine_selector
     @current_profile = Profile.find_by(user_id: current_user.id)
-    
+    redirect_to new_profile_path if @current_profile.nil? 
   end
 
   def cuisine_update
