@@ -4,24 +4,42 @@
 
 <%= link_to 'Back', conversations_path %>
 
-<div class="ui segment">
-  <% @messages.each do |message| %>
-    <% if message.body %>
-      <% user = User.find(message.user_id) %>
-      <div class="item">
-        <div class="content">
-          <div class="header"><strong><%= user.email %></strong> <%= message.message_time %></div>
-          <div class="list">
-            <div class="item">
-              <i class="right triangle icon"></i>
-              <%= message.body %>
+
+<%# Other person's profile photo goes here
+<div class="container textbox-styling1">
+</div> %>
+
+<br>
+
+<%# Other Person's name underneath picture
+Add the cuisine that both of you feel like eating on the day %>
+
+<div class="container textbox-styling1 pt-5 pb-5">
+  <div class="container ui segment">
+      <% @messages.each do |message| %>
+        <% if message.body %>
+          <% user = User.find(message.user_id) %>
+          <div class="item">
+            <div class="content textbox-styling2">
+              <div class="header"><strong><%= user.email %></strong> <%= message.message_time %></div>
+
+            <%# Seperate the sender and recipient from each other  %>
+            <%# Show first/last name instead of email %>
+
+              <div class="list">
+                <div class="item">
+                  <i class="right triangle icon"></i>
+                  <%= message.body %>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    <% end %>
-  <% end %>
+        <% end %>
+      <% end %>
+  </div>
 </div>
+
+<br>
 
 <%= form_for [@conversation, @message], html: {class: "ui reply form"} do |f| %>
   <div class="field">
