@@ -9,19 +9,20 @@
   </head>
 
   <body>
-    <div class="header clearfix bg-danger">
+    <div class="header clearfix bg-primary">
         <h3 class="display-4 float-left mx-4 text-white">EATUP</h3>
         <nav class="">
           <ul class="nav nav-pills float-left my-3">
             <li class="nav-item">
-              <%= link_to 'Profiles', profiles_path, class: "nav-link"%>
+              <%= link_to 'Inbox', conversations_path, class: 'btn btn-outline-warning text-white' %>
             </li>
             
           </ul>
         </nav>
+        
         <div class="float-right px-4 my-3">
           <% if user_signed_in? %>
-            <%= link_to 'Edit account', edit_user_registration_path, class: 'btn btn-outline-warning text-white' %>
+            <%= link_to 'Edit Profile', edit_profile_path(id: current_user.id), class: 'btn btn-outline-warning text-white' %>
             <%= link_to 'Sign out', destroy_user_session_path, class: 'btn btn-outline-secondary text-white', method: :delete %>
           <% else %>
             <%= link_to 'Sign in', new_user_session_path, class: 'btn btn-outline-warning text-white' %>
