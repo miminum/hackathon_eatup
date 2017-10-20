@@ -6,15 +6,18 @@ EATup is an online social website application that facilitates meetups between i
 Based off Maslow's Hierachy of Needs, the idea behind the application was to combine individuals psychological need of belongingness and love, and their basic needs of food. This application enables people to form relationships with strangers, and fulfill their needs/interests in food. This fills the gap of individuals wanting to try restaurants, but do not have anyone to share that experience with.
 
 ## The Problem
-Foodies do not have anyone to share the foodie experience with.
+- [The IBISWorld Market Research Report](https://www.ibisworld.com.au/industry-trends/market-research-reports/accommodation-food-services/restaurants.html) reports that the foodie culture continues to rise.
+- Consumer demand for quality food and fine-dining experiences have fuelled revenue growth year on year.
+- It can be perceived that these food and fine-dining is experienced with a close friend or family. However, there are times where individuals can find themselves not having a companion, friend or family to share this experience with
+
 
 ## The Solution
 Bringing people together with similar food interests with an application that matches people together based on their food preferences for that day.
 
 ## Target Audience
 * the companionless foodie
-* lonely office workers / students / travellers
-* singles with a particular interest in food whom what to meet other foodies
+  - lonely office workers / students / travellers
+  - singles with a particular interest in food whom what to meet other foodies
 
 ## Assessment of Other Competitors
 * Meetup - Has the capability of facilitating offline meetings at various locations. The point of difference between EATup and Meetup is that EATup focuses just on food and enables instant private conversations between users. The UX of Meetup requires users to set their preferences of their interests, but does not go into the detail of choosing a meeting place that is agreed by the organiser and the attendee.
@@ -44,6 +47,7 @@ Bringing people together with similar food interests with an application that ma
 * As a User, I would like to be notified via email on a match, in order to allow me not to constantly be on the application to see if there is a match
 
 ## Wireframes
+https://www.figma.com/file/KBWd0F420IaEe6uTJF3M5M5N/Hackathon
 ![alt text](https://www.figma.com/file/KBWd0F420IaEe6uTJF3M5M5N/Hackathon)
 
 ## Entity Relationship Diagram
