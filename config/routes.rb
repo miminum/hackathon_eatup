@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   devise_for :users
 
   root :to => "profiles#index"
-  # root :to => "devise/sessions#new"
 
   resources :conversations do
     resources :messages
