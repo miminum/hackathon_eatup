@@ -1,6 +1,20 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!  
 
+  def cuisine_selector
+    @current_profile = Profile.find_by(user_id: current_user.id)
+    
+  end
+
+  def cuisine_update
+    @current_profile = Profile.find_by(user_id: current_user.id)
+    if @current_profile.update(profile_params)
+      redirect_to '/profiles/'
+    else
+      redirect_to cuisine_path
+    end
+  end
   # GET /profiles
   # GET /profiles.json
   def index
@@ -69,6 +83,6 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-      params.require(:profile).permit(:first_name, :last_name, :blurb, :profile_image_data, :profile_image, :remove_profile_image, :gender, :city, :country_code, :user_id)
+      params.require(:profile).permit(:first_name, :last_name, :blurb, :profile_image_data, :profile_image, :remove_profile_image, :gender, :city, :country_code, :user_id, :cuisine_preference)
     end
 end
