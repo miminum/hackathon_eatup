@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'restaurant/index'
+
   resources :profiles
   devise_for :users
   root :to => "profiles#index"

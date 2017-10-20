@@ -1,0 +1,31 @@
+
+<div class="container" style="height=100px">
+    <div class="p-3">
+        <h1> Find [Profile.cuisine] Restaurants to eat at with [User] </h1>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="text-center">
+        <h2>Zomato Results</h2>
+    </div>
+    <table class="table">
+        <thead> 
+            <tr>
+                <th scope="col"> </th>
+                <th scope="col">Restaurant</th>
+                <th scope="col">Location</th>
+            </tr>
+        </thead>
+        <th scope="row">
+            <% @response["restaurants"].each do |restaurant| %>
+                <tr>
+                    <td><%= image_tag restaurant["restaurant"]["thumb"] %></td>
+                    <td><strong><%= link_to restaurant["restaurant"]["name"], restaurant["restaurant"]["events_url"], target: :_blank %> (<%= restaurant["restaurant"]["user_rating"]["aggregate_rating"] %> out of 5)</strong></td>
+                    <td><%= restaurant["restaurant"]["location"]["address"] %> </td>
+                </tr>
+            <% end %>
+        </th>
+    </table>
+</div>
