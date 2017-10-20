@@ -1,0 +1,16 @@
+<div class ="container-background burger">
+  <div class="jumbotron cuisine-container align-middle">
+    <h2 class="display-3"><%= @current_profile.first_name.capitalize %>, what would you like to today?</h2>
+    <%= form_with(model: @current_profile, local: true) do |form| %>
+
+      <div class="field">
+        <%= form.select :cuisine_preference,  Profile::CUISINE_TYPES %>
+      </div>  
+      <div class="actions">
+        
+        <%= form.submit "Find Match", class: "btn btn-success" %>
+      </div>
+    <% end %>
+
+  </div>
+</div>

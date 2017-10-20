@@ -1,11 +1,20 @@
 @import "bootstrap";
 
-.devise-background {
-    background-image: url(bike.jpg);
+.container-background {
     background-size: 100%;
     width: 100.9%;
     min-height: 800px;
     
+}
+.bike {
+    background-image: url(bike.jpg);
+}
+.burger {
+    background-image: url(burger.jpg);
+    background-size: 100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 10%;
 }
 
 .login-container {
@@ -14,3 +23,11 @@
     margin: 7% 37%;
     text-align: center;
 }
+
+.cuisine-container {
+    width: 45%;
+    height: 400px;
+    margin: 0 25%;
+
+}
+
