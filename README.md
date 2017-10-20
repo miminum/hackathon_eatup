@@ -44,6 +44,7 @@ Bringing people together with similar food interests with an application that ma
 * As a User, I would like to be notified via email on a match, in order to allow me not to constantly be on the application to see if there is a match
 
 ## Wireframes
+![alt text](https://www.figma.com/file/KBWd0F420IaEe6uTJF3M5M5N/Hackathon)
 
 ## Entity Relationship Diagram
 
