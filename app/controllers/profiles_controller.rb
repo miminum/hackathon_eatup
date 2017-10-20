@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!  
 
   def cuisine_selector
     @current_profile = Profile.find_by(user_id: current_user.id)

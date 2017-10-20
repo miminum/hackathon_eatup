@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   get '/cuisine', to: "profiles#cuisine_selector", as: 'cuisine'
   post '/cuisine', to: "profiles#cuisine_update"
   devise_for :users
+
   root :to => "profiles#index"
+  # root :to => "devise/sessions#new"
+
   resources :conversations do
     resources :messages
   end
