@@ -4,10 +4,17 @@
 
 <%= link_to 'Back', conversations_path %>
 
+
+<%# Other person's profile photo goes here
+<div class="container textbox-styling1">
+</div> %>
+
 <br>
 
-<div class="container textbox-styling1">
-  <br>
+<%# Other Person's name underneath picture
+Add the cuisine that both of you feel like eating on the day %>
+
+<div class="container textbox-styling1 pt-5 pb-5">
   <div class="container ui segment">
       <% @messages.each do |message| %>
         <% if message.body %>
@@ -17,8 +24,7 @@
               <div class="header"><strong><%= user.email %></strong> <%= message.message_time %></div>
 
             <%# Seperate the sender and recipient from each other  %>
-            <%# @conversations.each do |conversation| %>
-            <%# if conversation %>
+            <%# Show first/last name instead of email %>
 
               <div class="list">
                 <div class="item">
@@ -31,7 +37,6 @@
         <% end %>
       <% end %>
   </div>
-  <br>
 </div>
 
 <br>

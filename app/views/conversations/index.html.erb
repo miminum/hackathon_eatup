@@ -1,5 +1,3 @@
-<div> <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> </div>
-
 <div class="ui segment">
   <h3><%= current_user.email.upcase %>'s Inbox</h3>
 
@@ -12,23 +10,15 @@
           <% else %>
             <% recipient = User.find(conversation.sender_id) %>
           <% end %>
+
           <%= link_to recipient.email, conversation_messages_path(conversation)%>
+          <%= Profile.find_by(user_id: conversation.recipient_id).first_name %>
+          <%= Profile.find_by(user_id: conversation.recipient_id).first_name %>
+
+
         <% end %>
       <% end %>
     </div>
   </div>
 </div>
 
-
-<div class="ui segment">
-  <h3>All Users</h3>
-  <div class="ui list">
-    <% @users.each do |user| %>
-      <% if user.id != current_user.id %>
-      <div class="item">
-        <%= user.email %> <%= link_to 'Message me!', conversations_path(sender_id: current_user.id, recipient_id: user.id), method: 'post'%>
-      </div>
-      <% end %>
-    <% end %>
-  </div>
-</div>
