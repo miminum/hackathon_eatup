@@ -48,9 +48,9 @@ Bringing people together with similar food interests with an application that ma
 
 ## Wireframes
 https://www.figma.com/file/KBWd0F420IaEe6uTJF3M5M5N/Hackathon
-![alt text](https://www.figma.com/file/KBWd0F420IaEe6uTJF3M5M5N/Hackathon)
 
 ## Entity Relationship Diagram
+http://dbdesigner.net/designer/schema/120256
 
 ## Gems
 * Bootstrap - Styling of Views
