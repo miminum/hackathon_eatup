@@ -47,14 +47,11 @@ Bringing people together with similar food interests with an application that ma
 * As a User, I would like to be notified via email on a match, in order to allow me not to constantly be on the application to see if there is a match
 
 ## Wireframes
-![GitHub Logo](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe1.png)
-
-![alt text](https://raw.githubusercontent.com/miminum/hackathon_eatup/tree/master/app/assets/images/wireframe1.png)
-
-
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
-![Alt text](/tree/master/app/assets/images/wireframe1.png)
-
+![Wireframe1](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe1.png)
+![Wireframe2](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe2.png)
+![Wireframe3](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe3.png)
+![Wireframe4](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe4.png)
+![Wireframe5](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe5.png)
 
 https://www.figma.com/file/KBWd0F420IaEe6uTJF3M5M5N/Hackathon
 
