@@ -2,42 +2,39 @@
 
 
 <% if @profile.profile_image %>
-  <div><%= image_tag @profile.profile_image_url(:thumb) %></div>
+    <%= image_tag @profile.profile_image_url(:thumb), size: "225x225", class: "mx-auto d-block img-thumbnail py-2 px-2 jumbotron", :alt => "avatar"%>
 <% end %>
-<p>
-  <strong>First name:</strong>
-  <%= @profile.first_name %>
+
+
+  <div class="text-center">
+    <h3><strong><%= @profile.first_name %> <%= @profile.last_name %></strong></h3>
+  </div>
+
+<% if @profile.user == current_user %>
+  <div class="text-center">
+    <%= link_to 'Contact Me', conversations_path(sender_id: current_user.id, recipient_id: @profile.user_id), class: "btn btn-danger" %>
+  </div>
+<% end %>
+
+<p> 
+  <div class="text-center">Mutual Cuisine Choice: <%= @profile.cuisine_preference %></div>
 </p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @profile.last_name %>
+
+<p> 
+  <div class="text-center">Location: <%= @profile.city %>, <%= @profile.country_code.upcase %></div>
 </p>
 
-<p>
-  <strong>Blurb:</strong>
-  <%= @profile.blurb %>
-</p>
+<div class="container">
+  <div class="text-center">
+    <p>
+      "<%= @profile.blurb %>"
+    </p>
+  </div>
+</div>
 
-<p>
-  <strong>Gender:</strong>
-  <%= @profile.gender %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @profile.city %>
-</p>
-
-<p>
-  <strong>Country code:</strong>
-  <%= @profile.country_code %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @profile.user %>
-</p>
-
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<% if @profile.user == current_user %>
+  <%= link_to 'Edit', edit_profile_path(@profile) %>
+<% end %>
+ |
 <%= link_to 'Back', profiles_path %>
