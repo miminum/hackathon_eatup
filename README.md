@@ -51,9 +51,11 @@ Opening Screens
 ![Wireframe1](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe1.png)
 
 Matching System
+
 ![Wireframe2](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe2.png)
 
 Profiles
+
 ![Wireframe3](https://github.com/miminum/hackathon_eatup/blob/master/app/assets/images/wireframe3.png)
 
 Chat and Zomato
