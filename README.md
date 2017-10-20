@@ -49,6 +49,11 @@ Bringing people together with similar food interests with an application that ma
 ## Wireframes
 ![alt text](https://raw.githubusercontent.com/miminum/hackathon_eatup/tree/master/app/assets/images/wireframe1.png)
 
+
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](/miminum/hackathon_eatup/tree/master/app/assets/images/wireframe1.png?raw=true "Optional Title")
+
+
 https://www.figma.com/file/KBWd0F420IaEe6uTJF3M5M5N/Hackathon
 
 ## Entity Relationship Diagram
