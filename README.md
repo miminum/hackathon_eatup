@@ -1,5 +1,9 @@
 # EATup
 
+Project by [Daniel Huong](https://github.com/miminum), [Jared Hutchinson](https://github.com/JazzHutchy), [Isabelle Gaboc](https://github.com/igaboc)
+
+(http://young-peak-32028.herokuapp.com/)
+
 ## Description
 EATup is an online social website application that facilitates meetups between individuals with the common interest of eating at restaurants based on the users chosen cuisine for that day. It brings people together with similar food interest that matches people based on their food preferences for that day. This application also taps into the Zomato API allowing users to have access the restaurants, their locations and reviews, making it easier for the user to select a restaurant, without the need to leave the website. 
 
